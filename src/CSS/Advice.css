@@ -28,6 +28,10 @@
     color: hsl(193, 38%, 86%);
 }
 
+.dividerMobile{
+    display: none;
+}
+
 .btnDice {
     width: 60px;
     height: 60px;
@@ -48,4 +52,22 @@
     position: absolute;
     top: 30%;
     left: 30%;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 90%;
+    }
+    .dividerDesktop{
+        display: none;
+    }
+    .dividerMobile{
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+    }
+    .btnDice{
+        left: 40%;
+    }
 }
