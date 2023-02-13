@@ -54,6 +54,18 @@
     left: 30%;
 }
 
+.footer{
+    color: hsl(193, 38%, 86%);
+    font-weight: 500;
+    position: absolute;
+    top: 160%;
+    left: 12%;
+  }
+  
+  .footerSpecial{
+    color: hsl(150, 100%, 66%);
+  }
+
 @media screen and (max-width: 375px) {
     .container{
         width: 90%;

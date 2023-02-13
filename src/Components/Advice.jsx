@@ -4,6 +4,11 @@ import divider from "../Images/pattern-divider-desktop.svg"
 import dividerMobile from "../Images/pattern-divider-mobile.svg"
 import dice from "../Images/icon-dice.svg" 
 
+const name = {
+  mentor: "Frontend Mentor",
+  developer: "Rami Rbehi"
+}
+
 const Advice = () => {
 
     const [advice, setAdvice] = useState(null);
@@ -49,6 +54,7 @@ const Advice = () => {
         <div className="btnDice" onClick={handleClick}>
         <img src={dice} alt="" className="dice" />
         </div>
+        <p className='footer'>Challenge by <span className='footerSpecial'>{name.mentor}</span>. Coded by <span className='footerSpecial'>{name.developer}.</span></p>
     </div>
   )
 }
